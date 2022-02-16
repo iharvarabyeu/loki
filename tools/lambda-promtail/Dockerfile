@@ -1,6 +1,6 @@
 FROM golang:1-alpine3.14 AS build-image
 
-COPY tools/lambda-promtail /src/lambda-promtail
+COPY . /src/lambda-promtail
 WORKDIR /src/lambda-promtail
 
 RUN go version
